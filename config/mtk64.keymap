@@ -43,7 +43,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp LANGUAGE_5  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp LEFT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp ENTER  &kp EQUAL  &kp SINGLE_QUOTE  &tog 2  &kp ENTER  &lt 3 LANG1  &lt 1 BACKSPACE  &kp ENTER  &tog 2  &tog 6  &kp RETURN  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp NUHS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp ENTER  &kp EQUAL  &kp SINGLE_QUOTE  &tog 2  &tog 3  &kp C_AC_FORWARD  &lt 1 BACKSPACE  &none  &none  &kp C_AC_BACK  &mo 1  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings = <
