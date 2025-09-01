@@ -34,6 +34,19 @@
 
             tap-ms = <20>; // スクロールのタップ時間
         };
+        // --- ここから追加：2 / @（Shift+2）をJIS環境で正しく出す ---
+        two_at_jis: two_at_jis {
+            compatible = "zmk,behavior-mod-morph";
+            label = "TWO_AT_JIS";
+            #binding-cells = <0>;
+            // 単押し → "2"、Shift併用 → "@"
+            // "@": JISでは JP_AT（= LBKT）を送るのが正解
+            bindings = <&kp N2>, <&kp JP_AT>;
+            // 左右どちらかのShiftが押されていたら後者（@）を発火
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+            // keep-modsは未指定（=0）。余計なShiftは送らない＝JISで安定
+        };
+        // --- 追加ここまで ---
     };
 };
 
