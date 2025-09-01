@@ -62,7 +62,9 @@
             label = "SIX_CARET";
             #binding-cells = <0>;
             bindings = <&kp N6>, <&kp JP_CARET>;
-   // 6 / ^
+
+            // 6 / ^
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -71,7 +73,9 @@
             label = "SEVEN_AMP";
             #binding-cells = <0>;
             bindings = <&kp N7>, <&kp JP_AMPS>;
-    // 7 / &
+
+            // 7 / &
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -80,7 +84,9 @@
             label = "EIGHT_ASTRK";
             #binding-cells = <0>;
             bindings = <&kp N8>, <&kp JP_ASTRK>;
-   // 8 / *
+
+            // 8 / *
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -89,7 +95,9 @@
             label = "NINE_LPAR";
             #binding-cells = <0>;
             bindings = <&kp N9>, <&kp JP_LPAR>;
-    // 9 / (
+
+            // 9 / (
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -98,7 +106,9 @@
             label = "ZERO_RPAR";
             #binding-cells = <0>;
             bindings = <&kp N0>, <&kp JP_RPAR>;
-    // 0 / )
+
+            // 0 / )
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -109,7 +119,9 @@
             label = "MINUS_UNDER";
             #binding-cells = <0>;
             bindings = <&kp JP_MINUS>, <&kp JP_UNDER>;
-  // - / _
+
+            // - / _
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -118,7 +130,9 @@
             label = "EQUAL_PLUS";
             #binding-cells = <0>;
             bindings = <&kp JP_EQUAL>, <&kp JP_PLUS>;
-   // = / +
+
+            // = / +
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -127,7 +141,9 @@
             label = "SEMI_COLON";
             #binding-cells = <0>;
             bindings = <&kp JP_SEMI>, <&kp JP_COLON>;
-   // ; / :
+
+            // ; / :
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -136,7 +152,9 @@
             label = "QUOTE_DQUOTE";
             #binding-cells = <0>;
             bindings = <&kp JP_SQT>, <&kp JP_DQT>;
-      // ' / "
+
+            // ' / "
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
     };
@@ -148,7 +166,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &six_caret  &seven_amp  &eight_ast  &nine_lpar  &zero_rpar  &minus_us  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &semi_colon  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NUHS  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &equal_us  &quote_dquote  &tog 2  &tog 3  &kp LC(C)  &kp LC(V)  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 5  &mo 1  &mo 2  &mo 5  &mo 1  &mo 2  &mo 5
+&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &six_caret  &seven_amp  &eight_ast  &nine_lpar  &zero_rpar  &minus_us  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &semi_colon  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NUHS  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &equal_us  &quote_dquote  &tog 2  &tog 0  &kp LC(C)  &kp LC(V)  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4
             >;
 
             sensor-bindings = <
@@ -171,17 +189,6 @@
             sensor-bindings = <
                 &inc_dec_kp TAB LC(TAB) 
                 &inc_dec_kp PG_UP PG_DN
-            >;
-        };
-
-        layer_3 {
-            bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans  &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS  &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp PLUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp PERIOD  &kp SLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp EQUAL  &kp COMMA
-            >;
-
-            sensor-bindings = <
-                &scroll_left_right
-                &scroll_up_down
             >;
         };
 
