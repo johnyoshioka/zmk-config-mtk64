@@ -166,7 +166,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &six_caret  &seven_amp  &eight_ast  &nine_lpar  &zero_rpar  &minus_us  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &semi_colon  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NUHS  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &equal_us  &quote_dquote  &tog 2  &tog 0  &kp LC(C)  &kp LC(V)  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4
+&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &six_caret  &seven_amp  &eight_ast  &nine_lpar  &zero_rpar  &minus_us  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &semi_colon  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NUHS  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &equal_us  &quote_dquote  &tog 2  &tog 3  &kp LC(C)  &kp LC(V)  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4  &mo 1  &mo 2  &mo 4
             >;
 
             sensor-bindings = <
@@ -194,7 +194,7 @@
 
         layer_4 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &kp LS(N4)  &kp LS(N5)  &kp EQUAL  &kp LS(SEMI)  &kp COLON  &kp LS(N8)  &kp LS(N9)  &trans  &trans  &kp PAGE_UP  &kp UP_ARROW  &kp PAGE_DOWN  &trans  &trans  &kp N7  &kp N8  &kp N9  &kp N0  &trans  &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans  &kp N4  &kp N5  &kp N6  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp COMMA  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
