@@ -43,7 +43,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp NUHS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp ENTER  &kp EQUAL  &kp SINGLE_QUOTE  &tog 2  &tog 3  &mkp MB5  &kp BACKSPACE  &none  &none  &mkp MB4  &mo 1  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp NUHS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &kp EQUAL  &kp SINGLE_QUOTE  &tog 2  &tog 3  &mt LEFT_CONTROL C  &mt LEFT_CONTROL V  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
             >;
 
             sensor-bindings = <
@@ -54,7 +54,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
