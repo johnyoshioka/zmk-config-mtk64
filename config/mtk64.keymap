@@ -47,6 +47,80 @@
             // keep-modsは未指定（=0）。余計なShiftは送らない＝JISで安定
         };
         // --- 追加ここまで ---
+        // --- 数字段（US感覚でのShift記号） ---
+        six_caret: six_caret {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SIX_CARET";
+            #binding-cells = <0>;
+            bindings = <&kp N6>, <&kp JP_CARET>;   // 6 / ^
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        seven_amp: seven_amp {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEVEN_AMP";
+            #binding-cells = <0>;
+            bindings = <&kp N7>, <&kp JP_AMPS>;    // 7 / &
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        eight_ast: eight_ast {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EIGHT_ASTRK";
+            #binding-cells = <0>;
+            bindings = <&kp N8>, <&kp JP_ASTRK>;   // 8 / *
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        nine_lpar: nine_lpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "NINE_LPAR";
+            #binding-cells = <0>;
+            bindings = <&kp N9>, <&kp JP_LPAR>;    // 9 / (
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        zero_rpar: zero_rpar {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ZERO_RPAR";
+            #binding-cells = <0>;
+            bindings = <&kp N0>, <&kp JP_RPAR>;    // 0 / )
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        // --- 記号ペア（US感覚でのShift記号） ---
+        minus_us: minus_us {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS_UNDER";
+            #binding-cells = <0>;
+            bindings = <&kp JP_MINUS>, <&kp JP_UNDER>;  // - / _
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        equal_us: equal_us {
+            compatible = "zmk,behavior-mod-morph";
+            label = "EQUAL_PLUS";
+            #binding-cells = <0>;
+            bindings = <&kp JP_EQUAL>, <&kp JP_PLUS>;   // = / +
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        semi_colon: semi_colon {
+            compatible = "zmk,behavior-mod-morph";
+            label = "SEMI_COLON";
+            #binding-cells = <0>;
+            bindings = <&kp JP_SEMI>, <&kp JP_COLON>;   // ; / :
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
+        quote_dquote: quote_dquote {
+            compatible = "zmk,behavior-mod-morph";
+            label = "QUOTE_DQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp JP_SQT>, <&kp JP_DQT>;      // ' / "
+            mods = <(MOD_LSFT | MOD_RSFT)>;
+        };
+
     };
 };
 
