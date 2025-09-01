@@ -34,25 +34,35 @@
 
             tap-ms = <20>; // スクロールのタップ時間
         };
+
         // --- ここから追加：2 / @（Shift+2）をJIS環境で正しく出す ---
+
         two_at_jis: two_at_jis {
             compatible = "zmk,behavior-mod-morph";
             label = "TWO_AT_JIS";
             #binding-cells = <0>;
+
             // 単押し → "2"、Shift併用 → "@"
             // "@": JISでは JP_AT（= LBKT）を送るのが正解
+
             bindings = <&kp N2>, <&kp JP_AT>;
+
             // 左右どちらかのShiftが押されていたら後者（@）を発火
+
             mods = <(MOD_LSFT | MOD_RSFT)>;
+
             // keep-modsは未指定（=0）。余計なShiftは送らない＝JISで安定
         };
+
         // --- 追加ここまで ---
         // --- 数字段（US感覚でのShift記号） ---
+
         six_caret: six_caret {
             compatible = "zmk,behavior-mod-morph";
             label = "SIX_CARET";
             #binding-cells = <0>;
-            bindings = <&kp N6>, <&kp JP_CARET>;   // 6 / ^
+            bindings = <&kp N6>, <&kp JP_CARET>;
+   // 6 / ^
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -60,7 +70,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SEVEN_AMP";
             #binding-cells = <0>;
-            bindings = <&kp N7>, <&kp JP_AMPS>;    // 7 / &
+            bindings = <&kp N7>, <&kp JP_AMPS>;
+    // 7 / &
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -68,7 +79,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EIGHT_ASTRK";
             #binding-cells = <0>;
-            bindings = <&kp N8>, <&kp JP_ASTRK>;   // 8 / *
+            bindings = <&kp N8>, <&kp JP_ASTRK>;
+   // 8 / *
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -76,7 +88,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "NINE_LPAR";
             #binding-cells = <0>;
-            bindings = <&kp N9>, <&kp JP_LPAR>;    // 9 / (
+            bindings = <&kp N9>, <&kp JP_LPAR>;
+    // 9 / (
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -84,16 +97,19 @@
             compatible = "zmk,behavior-mod-morph";
             label = "ZERO_RPAR";
             #binding-cells = <0>;
-            bindings = <&kp N0>, <&kp JP_RPAR>;    // 0 / )
+            bindings = <&kp N0>, <&kp JP_RPAR>;
+    // 0 / )
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
         // --- 記号ペア（US感覚でのShift記号） ---
+
         minus_us: minus_us {
             compatible = "zmk,behavior-mod-morph";
             label = "MINUS_UNDER";
             #binding-cells = <0>;
-            bindings = <&kp JP_MINUS>, <&kp JP_UNDER>;  // - / _
+            bindings = <&kp JP_MINUS>, <&kp JP_UNDER>;
+  // - / _
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -101,7 +117,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "EQUAL_PLUS";
             #binding-cells = <0>;
-            bindings = <&kp JP_EQUAL>, <&kp JP_PLUS>;   // = / +
+            bindings = <&kp JP_EQUAL>, <&kp JP_PLUS>;
+   // = / +
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -109,7 +126,8 @@
             compatible = "zmk,behavior-mod-morph";
             label = "SEMI_COLON";
             #binding-cells = <0>;
-            bindings = <&kp JP_SEMI>, <&kp JP_COLON>;   // ; / :
+            bindings = <&kp JP_SEMI>, <&kp JP_COLON>;
+   // ; / :
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
 
@@ -117,10 +135,10 @@
             compatible = "zmk,behavior-mod-morph";
             label = "QUOTE_DQUOTE";
             #binding-cells = <0>;
-            bindings = <&kp JP_SQT>, <&kp JP_DQT>;      // ' / "
+            bindings = <&kp JP_SQT>, <&kp JP_DQT>;
+      // ' / "
             mods = <(MOD_LSFT | MOD_RSFT)>;
         };
-
     };
 };
 
@@ -130,7 +148,7 @@
 
         default_layer {
             bindings = <
-&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp MINUS  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &kp SEMI  &kp NUHS  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RIGHT_BRACKET  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &kp EQUAL  &kp SINGLE_QUOTE  &tog 2  &tog 3  &mt LEFT_CONTROL C  &mt LEFT_CONTROL V  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3  &mo 1  &mo 2  &mo 3
+&kp ESC  &kp N1  &two_at_jis  &kp N3  &kp N4  &kp N5  &six_caret  &seven_amp  &eight_ast  &nine_lpar  &zero_rpar  &minus_us  &kp GRAVE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp INTERNATIONAL_3  &kp TAB  &kp A  &kp S  &kp D  &kp F  &kp G  &kp H  &kp J  &kp K  &kp L  &semi_colon  &kp RIGHT_BRACKET  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &kp B  &kp SPACE  &kp SPACE  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp NUHS  &kp LEFT_CONTROL  &kp LEFT_ALT  &mkp LCLK  &mkp RCLK  &kp DEL  &kp BACKSPACE  &equal_us  &quote_dquote  &tog 2  &tog 3  &kp LC(C)  &kp LC(V)  &none  &none  &mo 1  &kp RETURN  &mo 1  &mo 2  &mo 5  &mo 1  &mo 2  &mo 5  &mo 1  &mo 2  &mo 5
             >;
 
             sensor-bindings = <
@@ -141,7 +159,7 @@
 
         layer_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB3  &mkp MB5  &trans  &trans  &trans  &trans  &trans  &mkp MB4  &trans  &trans  &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
